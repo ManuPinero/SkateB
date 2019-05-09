@@ -1,0 +1,155 @@
+/**Fuentes**/
+
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'Dosis', sans-serif;
+*/
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+  }
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/** Utilidades **/
+
+.no-margin{
+    margin: 0;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+  
+/** Globales **/
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+p{
+    font-family: 'Dosis', sans-serif;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Raleway', sans-serif;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 4.2rem;
+}
+
+h3{
+    font-size: 3.6rem;
+}
+
+h4{
+    font-size: 2.8rem;
+}
+
+/** Css Header **/
+
+@media (min-width: 768px) {
+   .barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    } 
+}
+
+
+.site-header{
+    background-image: url(../img/portada.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 53rem;
+}
+
+.site-header h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 7rem;
+    color: rgb(99, 147, 219);
+}
+
+.site-header h1 span{
+    font-weight: 300;
+    font-size: 5.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.site-header a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.site-header a:hover{
+    color: #000000;
+}
+
+/**Css Barra Navegacion **/
+
+.navegacion{
+    margin-top: 8rem;
+}
+
+.navegacion a{
+    text-align: center;
+    font-size: 2.5rem;
+    display: block;
+    margin: 1rem 0;
+}
+
+@media (min-width: 768px) {
+    
+    .navegacion{
+        margin-top: 0rem;
+    }
+
+    .navegacion a{
+        display: inline;
+        margin: 0.7rem;
+    }
+
+    .navegacion a:last-of-type{
+        margin: 0;
+    }
+}
+
+/**Css Texto Header **/
+
+.texto-header{
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.texto-header h2{
+    font-size: 3.8rem;
+}
+@media (min-width: 768px) {
+    
+    .texto-header{
+        text-align: left;
+        margin-top: 35rem;
+    }
+}
+
+
+
